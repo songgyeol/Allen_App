@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     //변수이고 속성
     @IBOutlet weak var mainLabel: UILabel!
     
@@ -119,6 +120,7 @@ class ViewController: UIViewController {
         comChoiceLabel.text = "준비"
         
         
+        
         //3)내 선택 이미지뷰에도 준비 이미지를 표시
         //4)내 선택 레이블에도 준비 문자열 표시
         myImageView.image = #imageLiteral(resourceName: "ready")
@@ -126,6 +128,7 @@ class ViewController: UIViewController {
         
        //5)메인 레이블 "도전??" 표시
         mainLabel.text = "도전??"
+        
         
         
        //6)컴퓨터가 다시 랜덤 가위,바위,보를 선택하고 저장
