@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.keyboardType = .emailAddress
         textField.returnKeyType = .next
         
+        
         // 최초응답자 설정(responder) (뷰마다 특성이 조금 다름) (UIResponder)
         // 전체화면이 터치를 입력받을 수 있는 상태 ==> 텍스트필드가 가장 먼저 입력받는 상태
         // 키보드가 올라옴 (손가락 터치로 직접 최초응답자 설정도 가능)
@@ -43,6 +44,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         print(#function)
         return true
     }
+    
     
     // 텍스트필드의 입력이 시작되면 호출 (시점)
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -79,6 +81,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         //return true
     }
+    
     
     // 텍스트필드의 엔터키가 눌러졌을때 호출 (동작할지 말지 물어보는 것)
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
