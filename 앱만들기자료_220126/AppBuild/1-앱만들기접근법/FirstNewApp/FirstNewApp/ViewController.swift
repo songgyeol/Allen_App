@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         configureUI()
     }
     
+    
     // UI셋팅 함수
     func configureUI() {
         mainLabel.text = "초를 선택하세요"
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
         timer?.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(doSomethingAfter1Second), userInfo: nil, repeats: true)
     }
+    
     
     
     
