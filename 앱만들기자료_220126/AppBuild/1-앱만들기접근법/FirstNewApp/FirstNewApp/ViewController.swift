@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-
+//class는 대문자로 시작
 class ViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     var timer: Timer?
     
     // 앱의 화면에 들어오면 처음 실행시키는 함수
+    //override = 재정의 (상위에 있는 UIViewController를 재정의)
+    //재정의 했으면 super.viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
     
     
     // UI셋팅 함수
+    //함수는 소문자로 시작
     func configureUI() {
         mainLabel.text = "초를 선택하세요"
         slider.value = 0.5
