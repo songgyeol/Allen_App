@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     //앱 화면에 들어오면 처음 실행되는 함수
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 1) 첫번째/두번째 이미지뷰에 준비(묵) 이미지를 띄워야 함
+        // 2) 첫번째/두번째 이미지뷰에 "준비"라고 문자열을 띄워야 함
       
     }
 
